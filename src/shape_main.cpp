@@ -17,13 +17,13 @@ int main() {
 
     std::cout << "Enter a height: ";
     std::cin >> height;
-    if (!std::cin) throw std::runtime_error("invalid height");
+    if (!std::cin || height < 0) throw std::runtime_error("invalid height");
 
     switch (option) {
         case 1:
             std::cout << "Enter a width: ";
             std::cin >> width;
-            if (!std::cin) throw std::runtime_error("invalid width");
+            if (!std::cin || width < 0) throw std::runtime_error("invalid width");
 
             Rectangle rect;
 
@@ -35,7 +35,7 @@ int main() {
         case 2:
             std::cout << "Enter base: ";
             std::cin >> base;
-            if (!std::cin) throw std::runtime_error("invalid base");
+            if (!std::cin || base < 0) throw std::runtime_error("invalid base");
 
             Triangle tri;
 
