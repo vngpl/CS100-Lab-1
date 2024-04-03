@@ -11,7 +11,9 @@ int main() {
 
     std::cout << "Choose a rectangle or a triangle by entering a '1' for rectangle and '2' for triangle" << std::endl;
     std::cin >> option;
-    if (!std::cin || option != 1 || option != 2) throw std::runtime_error("invalid input");
+    if (!std::cin || (option != 1 && option != 2)) {
+        throw std::runtime_error("invalid input, enter '1' for rectangle or '2' for triangle");
+    }
 
     std::cout << "Enter a height: ";
     std::cin >> height;

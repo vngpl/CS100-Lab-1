@@ -185,7 +185,6 @@ src/new_main.o: src/new_main.cpp.o
 # target to build an object file
 src/new_main.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bigger_area_calculator.dir/build.make CMakeFiles/bigger_area_calculator.dir/src/new_main.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/new_main.cpp.o
 .PHONY : src/new_main.cpp.o
 
 src/new_main.i: src/new_main.cpp.i
@@ -194,7 +193,6 @@ src/new_main.i: src/new_main.cpp.i
 # target to preprocess a source file
 src/new_main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bigger_area_calculator.dir/build.make CMakeFiles/bigger_area_calculator.dir/src/new_main.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/new_main.cpp.i
 .PHONY : src/new_main.cpp.i
 
 src/new_main.s: src/new_main.cpp.s
@@ -203,7 +201,6 @@ src/new_main.s: src/new_main.cpp.s
 # target to generate assembly for a file
 src/new_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bigger_area_calculator.dir/build.make CMakeFiles/bigger_area_calculator.dir/src/new_main.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/new_main.cpp.s
 .PHONY : src/new_main.cpp.s
 
 src/rectangle.o: src/rectangle.cpp.o
@@ -235,6 +232,30 @@ src/rectangle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bigger_area_calculator.dir/build.make CMakeFiles/bigger_area_calculator.dir/src/rectangle.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/rectangle.cpp.s
 .PHONY : src/rectangle.cpp.s
+
+src/shape_main.o: src/shape_main.cpp.o
+.PHONY : src/shape_main.o
+
+# target to build an object file
+src/shape_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/shape_main.cpp.o
+.PHONY : src/shape_main.cpp.o
+
+src/shape_main.i: src/shape_main.cpp.i
+.PHONY : src/shape_main.i
+
+# target to preprocess a source file
+src/shape_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/shape_main.cpp.i
+.PHONY : src/shape_main.cpp.i
+
+src/shape_main.s: src/shape_main.cpp.s
+.PHONY : src/shape_main.s
+
+# target to generate assembly for a file
+src/shape_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/shape_main.cpp.s
+.PHONY : src/shape_main.cpp.s
 
 src/triangle.o: src/triangle.cpp.o
 .PHONY : src/triangle.o
@@ -280,6 +301,9 @@ help:
 	@echo "... src/rectangle.o"
 	@echo "... src/rectangle.i"
 	@echo "... src/rectangle.s"
+	@echo "... src/shape_main.o"
+	@echo "... src/shape_main.i"
+	@echo "... src/shape_main.s"
 	@echo "... src/triangle.o"
 	@echo "... src/triangle.i"
 	@echo "... src/triangle.s"
