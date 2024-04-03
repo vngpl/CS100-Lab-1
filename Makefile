@@ -142,6 +142,19 @@ bigger_area_calculator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bigger_area_calculator.dir/build.make CMakeFiles/bigger_area_calculator.dir/build
 .PHONY : bigger_area_calculator/fast
 
+#=============================================================================
+# Target rules for targets named shape_area_calculator
+
+# Build rule for target.
+shape_area_calculator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shape_area_calculator
+.PHONY : shape_area_calculator
+
+# fast build rule for target.
+shape_area_calculator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/build
+.PHONY : shape_area_calculator/fast
+
 src/main1.o: src/main1.cpp.o
 .PHONY : src/main1.o
 
@@ -172,6 +185,7 @@ src/new_main.o: src/new_main.cpp.o
 # target to build an object file
 src/new_main.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bigger_area_calculator.dir/build.make CMakeFiles/bigger_area_calculator.dir/src/new_main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/new_main.cpp.o
 .PHONY : src/new_main.cpp.o
 
 src/new_main.i: src/new_main.cpp.i
@@ -180,6 +194,7 @@ src/new_main.i: src/new_main.cpp.i
 # target to preprocess a source file
 src/new_main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bigger_area_calculator.dir/build.make CMakeFiles/bigger_area_calculator.dir/src/new_main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/new_main.cpp.i
 .PHONY : src/new_main.cpp.i
 
 src/new_main.s: src/new_main.cpp.s
@@ -188,6 +203,7 @@ src/new_main.s: src/new_main.cpp.s
 # target to generate assembly for a file
 src/new_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bigger_area_calculator.dir/build.make CMakeFiles/bigger_area_calculator.dir/src/new_main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/new_main.cpp.s
 .PHONY : src/new_main.cpp.s
 
 src/rectangle.o: src/rectangle.cpp.o
@@ -197,6 +213,7 @@ src/rectangle.o: src/rectangle.cpp.o
 src/rectangle.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/area_calculator.dir/build.make CMakeFiles/area_calculator.dir/src/rectangle.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bigger_area_calculator.dir/build.make CMakeFiles/bigger_area_calculator.dir/src/rectangle.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/rectangle.cpp.o
 .PHONY : src/rectangle.cpp.o
 
 src/rectangle.i: src/rectangle.cpp.i
@@ -206,6 +223,7 @@ src/rectangle.i: src/rectangle.cpp.i
 src/rectangle.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/area_calculator.dir/build.make CMakeFiles/area_calculator.dir/src/rectangle.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bigger_area_calculator.dir/build.make CMakeFiles/bigger_area_calculator.dir/src/rectangle.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/rectangle.cpp.i
 .PHONY : src/rectangle.cpp.i
 
 src/rectangle.s: src/rectangle.cpp.s
@@ -215,7 +233,32 @@ src/rectangle.s: src/rectangle.cpp.s
 src/rectangle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/area_calculator.dir/build.make CMakeFiles/area_calculator.dir/src/rectangle.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bigger_area_calculator.dir/build.make CMakeFiles/bigger_area_calculator.dir/src/rectangle.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/rectangle.cpp.s
 .PHONY : src/rectangle.cpp.s
+
+src/triangle.o: src/triangle.cpp.o
+.PHONY : src/triangle.o
+
+# target to build an object file
+src/triangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/triangle.cpp.o
+.PHONY : src/triangle.cpp.o
+
+src/triangle.i: src/triangle.cpp.i
+.PHONY : src/triangle.i
+
+# target to preprocess a source file
+src/triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/triangle.cpp.i
+.PHONY : src/triangle.cpp.i
+
+src/triangle.s: src/triangle.cpp.s
+.PHONY : src/triangle.s
+
+# target to generate assembly for a file
+src/triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shape_area_calculator.dir/build.make CMakeFiles/shape_area_calculator.dir/src/triangle.cpp.s
+.PHONY : src/triangle.cpp.s
 
 # Help Target
 help:
@@ -227,6 +270,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... area_calculator"
 	@echo "... bigger_area_calculator"
+	@echo "... shape_area_calculator"
 	@echo "... src/main1.o"
 	@echo "... src/main1.i"
 	@echo "... src/main1.s"
@@ -236,6 +280,9 @@ help:
 	@echo "... src/rectangle.o"
 	@echo "... src/rectangle.i"
 	@echo "... src/rectangle.s"
+	@echo "... src/triangle.o"
+	@echo "... src/triangle.i"
+	@echo "... src/triangle.s"
 .PHONY : help
 
 
